@@ -50,10 +50,12 @@ export PATH="/Users/yourUser/Library/Android/sdk/platform-tools":$PATH
 ### E. Problems for Android
 #### run-android error about Java SDK
 In android/gradle/gradle-wrapper/gradle-wrapper.properties file, ay use different gradle version for JDK 10
-distributionUrl=https\://services.gradle.org/distributions/gradle-3.5.1-all.zip
-> # for jdk 10, may need to use following gradle according to
-> # https://stackoverflow.com/questions/46867399/react-native-error-could-not-determine-java-version-from-9-0-1
-> #distributionUrl=https\://services.gradle.org/distributions/gradle-4.3-rc-2-all.zip
+For jdk 10, may need to use following gradle according to
+https://stackoverflow.com/questions/46867399/react-native-error-could-not-determine-java-version-from-9-0-1
+
+> distributionUrl=https\://services.gradle.org/distributions/gradle-3.5.1-all.zip
+or
+> distributionUrl=https\://services.gradle.org/distributions/gradle-4.3-rc-2-all.zip
 
 #### run-android error about Android SDK
 May need to set ANDROID_HOME in android/local.properties file
