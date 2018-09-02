@@ -67,3 +67,5 @@ sdk.dir = /Users/joey/Library/Android/sdk
 May need to use Java 8
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
 
+#### Thermolist is missing after login
+The same web content work well in iOS. Need to debug later.
