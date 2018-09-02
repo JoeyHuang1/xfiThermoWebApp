@@ -54,7 +54,10 @@ For jdk 10, may need to use following gradle according to
 https://stackoverflow.com/questions/46867399/react-native-error-could-not-determine-java-version-from-9-0-1
 
 > distributionUrl=https\://services.gradle.org/distributions/gradle-3.5.1-all.zip
-> OR distributionUrl=https\://services.gradle.org/distributions/gradle-4.3-rc-2-all.zip
+
+or
+
+> distributionUrl=https\://services.gradle.org/distributions/gradle-4.3-rc-2-all.zip
 
 #### run-android error about Android SDK
 May need to set ANDROID_HOME in android/local.properties file
