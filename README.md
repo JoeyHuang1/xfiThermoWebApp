@@ -30,13 +30,6 @@ https://www.npmjs.com/package/react-native-fetch-blob#user-content-installation
 C.Add web content into mobile app
 
 
-D. To run on Android simulator
-
-Need to set path to Android adb first, like
-export PATH="/Users/yourUser/Library/Android/sdk/platform-tools":$PATH
-
-
-
 There are several ways to add web content into moile app.
 1. Using require
         <WebView
@@ -45,6 +38,13 @@ There are several ways to add web content into moile app.
 This work well for iOS. Need to verify if it works in Android.
 
 2. In XCode, Add Files into project with create folder reference option
+
+
+D. To run on Android simulator
+
+Need to set path to Android adb first, like
+export PATH="/Users/yourUser/Library/Android/sdk/platform-tools":$PATH
+
 
 
 
