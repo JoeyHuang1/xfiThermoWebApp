@@ -24,16 +24,10 @@ Will update Webpack config later to fix this.
 B. local file module
 
 rn-fetch-blob module is required. It's a module to access local files inside app bindle. Will use it later to update new local web content.
+https://www.npmjs.com/package/react-native-fetch-blob#user-content-installation
 
 
 C.Add web content into mobile app
-
-
-D. To run on Android simulator
-
-Need to set path to Android adb first, like
-export PATH="/Users/yourUser/Library/Android/sdk/platform-tools":$PATH
-
 
 
 There are several ways to add web content into moile app.
@@ -44,4 +38,26 @@ There are several ways to add web content into moile app.
 This work well for iOS. Need to verify if it works in Android.
 
 2. In XCode, Add Files into project with create folder reference option
+
+
+D. To run on Android simulator
+
+Need to set path to Android adb first, like
+export PATH="/Users/yourUser/Library/Android/sdk/platform-tools":$PATH
+
+
+
+
+E. Problems for Android
+In android/gradle/gradle-wrapper/gradle-wrapper.properties file, ay use different gradle version for JDK 10
+distributionUrl=https\://services.gradle.org/distributions/gradle-3.5.1-all.zip
+# for jdk 10, may need to use following gradle according to
+# https://stackoverflow.com/questions/46867399/react-native-error-could-not-determine-java-version-from-9-0-1
+#distributionUrl=https\://services.gradle.org/distributions/gradle-4.3-rc-2-all.zip
+
+May need to set ANDROID_HOME in android/local.properties file
+sdk.dir = /Users/joey/Library/Android/sdk
+
+May need to use Java 8
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
 
