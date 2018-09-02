@@ -20,26 +20,26 @@ It can't find the js/css with /. So need to update the index.html to load the js
 
 Will update Webpack config later to fix this.
 
-###B. local file module
+### B. local file module
 
 rn-fetch-blob module is required. It's a module to access local files inside app bindle. Will use it later to update new local web content.
 https://www.npmjs.com/package/react-native-fetch-blob#user-content-installation
 
 
-###C.Add web content into mobile app
+### C.Add web content into mobile app
 
 
-####There are several ways to add web content into moile app.
-#####1. Using require
+#### There are several ways to add web content into moile app.
+##### 1. Using require
         <WebView
           source={require('./webViewSrc/index.html')}
         ></WebView>
 This work well for iOS. Need to verify if it works in Android.
 
-#####2. In XCode, Add Files into project with create folder reference option
+##### 2. In XCode, Add Files into project with create folder reference option
 
 
-###D. To run on Android simulator
+### D. To run on Android simulator
 
 Need to set path to Android adb first, like
 export PATH="/Users/yourUser/Library/Android/sdk/platform-tools":$PATH
@@ -47,13 +47,13 @@ export PATH="/Users/yourUser/Library/Android/sdk/platform-tools":$PATH
 
 
 
-###E. Problems for Android
+### E. Problems for Android
 #### run-android error about Java SDK
 In android/gradle/gradle-wrapper/gradle-wrapper.properties file, ay use different gradle version for JDK 10
 distributionUrl=https\://services.gradle.org/distributions/gradle-3.5.1-all.zip
-># for jdk 10, may need to use following gradle according to
-># https://stackoverflow.com/questions/46867399/react-native-error-could-not-determine-java-version-from-9-0-1
->#distributionUrl=https\://services.gradle.org/distributions/gradle-4.3-rc-2-all.zip
+> # for jdk 10, may need to use following gradle according to
+> # https://stackoverflow.com/questions/46867399/react-native-error-could-not-determine-java-version-from-9-0-1
+> #distributionUrl=https\://services.gradle.org/distributions/gradle-4.3-rc-2-all.zip
 
 #### run-android error about Android SDK
 May need to set ANDROID_HOME in android/local.properties file
