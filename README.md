@@ -24,6 +24,7 @@ Will update Webpack config later to fix this.
 B. local file module
 
 rn-fetch-blob module is required. It's a module to access local files inside app bindle. Will use it later to update new local web content.
+https://www.npmjs.com/package/react-native-fetch-blob#user-content-installation
 
 
 C.Add web content into mobile app
