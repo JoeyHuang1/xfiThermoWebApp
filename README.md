@@ -1,8 +1,11 @@
 Comcast xFi thermotate control program
 
 Run
+
 yarn install
+
 react-native link (needed for rn-fetch-blob module)
+
 react-native run-ios or react-native run-android
 
 
