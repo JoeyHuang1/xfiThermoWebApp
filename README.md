@@ -67,10 +67,12 @@ or
 
 #### run-android error about Android SDK
 May need to set ANDROID_HOME in android/local.properties file
+
 sdk.dir = /Users/joey/Library/Android/sdk
 
 #### run-android error about Java Path
 May need to use Java 8
+
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
 
 #### Thermolist is missing after login
