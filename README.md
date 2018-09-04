@@ -8,7 +8,13 @@ react-native link (needed for rn-fetch-blob module)
 
 react-native run-ios or react-native run-android
 
+## To debug WebView in react-native
+Use Chrome chrome://inspect
+But the GUI is messed up in recent Chrome like 63-68. Use the Chrome 62 will have the right GUI.
+https://stackoverflow.com/questions/47980279/google-chrome-devtools-broken-when-inspecting-android-webview/48000682#48000682
+macOS: https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Mac%2F499098%2Fchrome-mac.zip?generation=1504230238091965&alt=media
 
+To debug the react-native JS, reference http://facebook.github.io/react-native/docs/debugging.html#content
 
 ## Note:
 
@@ -68,4 +74,4 @@ May need to use Java 8
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
 
 #### Thermolist is missing after login
-The same web content work well in iOS. Need to debug later.
+The same web content work well in iOS. For Android request, server returns thermostats without attribSet attribute, even the request data is the same as iOS. Need server to fix it, or use API for individual device, rather than /seeds API.
