@@ -14,6 +14,7 @@ But the GUI is messed up in recent Chrome like 63-68. Use the Chrome 62 will hav
 https://stackoverflow.com/questions/47980279/google-chrome-devtools-broken-when-inspecting-android-webview/48000682#48000682
 macOS: https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Mac%2F499098%2Fchrome-mac.zip?generation=1504230238091965&alt=media
 
+To debug the react-native JS, reference http://facebook.github.io/react-native/docs/debugging.html#content
 
 ## Note:
 
