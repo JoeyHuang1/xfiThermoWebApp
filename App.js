@@ -81,6 +81,7 @@ export default class App extends Component<Props> {
     return (
         <WebView
           source={require('./webSrcRedux/index.html')}
+          scrollEnabled={false}
         ></WebView>
 
     );
