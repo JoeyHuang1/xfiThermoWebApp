@@ -7,9 +7,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "16.4.1",
-    "rn-fetch-blob": "^0.10.11",
-    "react-native": "0.56.0"
+    "react-native": "0.56.0",
+    "rn-fetch-blob": "^0.10.11"
   },
   "devDependencies": {
     "babel-jest": "23.4.2",
