@@ -24,7 +24,14 @@ React/Webpack generated index.html pointed to js with URL starting with /.
 Even though those files are under the root folder (of bundled app), webview need to load the content as './index.html'.
 It can't find the js/css with /. So need to update the index.html to load the js/css with ./, instead of /.
 
-Will update Webpack config later to fix this.
+vue.config.js can set baseUrl for this. React may use route baseName, as in https://stackoverflow.com/questions/48134785/how-to-set-a-base-url-for-react-router-at-the-app-level
+
+Vue generated content can be used as web source now. It can be set in app.js by
+> source={require('./webSrcVue/index.html')}
+or
+> source={require('./webSrcRedux/index.html')
+
+It was not working before due to baseUrl and missing default route. The Andoird still have problem about missing attribSet, a server problem.
 
 ### B. local file module
 
