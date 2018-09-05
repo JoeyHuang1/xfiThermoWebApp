@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.1a7434ef8bf18986a6e9fdf2409c1b98.js"
+  "/webSrcVue/precache-manifest.a117c64ec8e576b1c2b937f5feb25885.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "xfi-thermo"});

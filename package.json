@@ -13,6 +13,7 @@
     "rn-fetch-blob": "^0.10.11"
   },
   "devDependencies": {
+    "@vue/devtools": "^4.1.5",
     "babel-jest": "23.4.2",
     "babel-preset-react-native": "^5",
     "jest": "23.5.0",
