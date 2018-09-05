@@ -28,7 +28,9 @@ vue.config.js can set baseUrl for this. React may use route baseName, as in http
 
 Vue generated content can be used as web source now. It can be set in app.js by
 > source={require('./webSrcVue/index.html')}
+
 or
+
 > source={require('./webSrcRedux/index.html')
 
 It was not working before due to baseUrl and missing default route. The Andoird still have problem about missing attribSet, a server problem.
